@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//Nícolas Telles
 int main() {
  double a,b,c;
  double media;
