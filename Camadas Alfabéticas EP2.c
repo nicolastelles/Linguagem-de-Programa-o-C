@@ -1,4 +1,4 @@
-//Nícolas Telles
+//NÃ­colas Telles
 #include <stdio.h>
 int main()
 {
@@ -24,7 +24,7 @@ for (x = n ; x >= 1 ; x--){
 }
 
 
-//nao é n+1 pelo fato da matriz começar com o 0
+//nao Ã© n+1 pelo fato da matriz comeÃ§ar com o 0
 MA [n][n] = '*';
 
 for (i=0;i<2*n+1;i++){
