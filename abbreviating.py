@@ -1,3 +1,4 @@
+#Nícolas Telles
 lista_nova = []
 while (True):
         nome_completo = input()
