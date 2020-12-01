@@ -1,4 +1,3 @@
-//Nicolas Telles
 #include <stdio.h>
 
 
@@ -18,11 +17,18 @@ struct complexo soma(struct complexo A, struct complexo B){
 //função multiplicação
 struct complexo multi(struct complexo A, struct complexo B){
   struct complexo resposta ;
-  resposta.real = ((A.real * B.real)-(A.imag * B.imag));
+  resposta.real = ((A.real * B.real) - (A.imag * B.imag));
   resposta.imag = ((A.imag * B.real) + (A.real * B.imag));
  return resposta;
-
 }
+
+void imprimir (struct complexo resposta){
+  if (resposta.imag > 0 )
+    printf("%d + %di",resposta.real, resposta.imag);  
+  else
+    printf("%d %di",resposta.real, resposta.imag);
+}
+
 
 int main(void) {
 
@@ -36,9 +42,6 @@ printf("Digite o número complexo B: ");
 scanf ("%d %d", &B.real, &B.imag);
 resposta = soma (A,B);
 //resposta = multi (A,B);
-if (resposta.imag > 0 )
-  printf("%d + %di",resposta.real, resposta.imag);
-else
-  printf("%d %di",resposta.real, resposta.imag);
+imprimir(resposta);
   return 0;
 }
